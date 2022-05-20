@@ -1,0 +1,70 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.std_logic_unsigned.all;
+use ieee.numeric_std.all;
+use ieee.math_real.all;
+library work;
+use work.all;
+use work.Common.all;
+
+entity MatrixMultiplier_tb is
+end MatrixMultiplier_tb;
+
+	
+architecture beh of MatrixMultiplier_tb is
+	--constants declaration
+	constant clk_period : time := 100 ns;
+	constant T_RESET : time    := 25 ns; -- Period before the reset deassertion
+	
+	component MatrixMultiplierArchitecture
+		generic (
+				matrixAColNumber : positive;
+				matrixBColNumber : positive;
+				matrixARowNumber : positive;
+				matrixBRowNumber : positive
+			);
+		port (
+			clock	: in std_ulogic;
+			reset	: in std_ulogic;
+			matrixA : in BitMatrix(0 to matrixARowNumber-1,0 to matrixAColNumber)(3 downto 0);
+			matrixB : in BitMatrix(0 to matrixBRowNumber-1,0 to matrixBColNumber)(3 downto 0);
+			matrixP : out BitMatrix(0 to matrixARowNumber-1,0 to matrixBColNumber)(8 downto 0 )
+			--matrixP : out BitMatrix(0 to matrixARowNumber-1,0 to matrixBColNumber)(integer( (ceil (log2 (real(((real(64) * real(matrixAColNumber)) + real(1) ))) ) ) ) downto 0 )
+		);
+	end component MatrixMultiplierArchitecture;
+	
+	
+	--Signals initializations
+	signal matrixA_ext: BitMatrix(0 to 1,0 to 2)(3 downto 0):=(("0000","0000","0000"),("0000","0000","0000"));
+	signal matrixB_ext: BitMatrix(0 to 2,0 to 3)(3 downto 0):=(("0000","0000","0000","0000"),("0000","0000","0000","0000"),("0000","0000","0000","0000"));
+	signal matrixP_ext: BitMatrix(0 to 1,0 to 3)(8 downto 0):=(others => (others => (others => '0')));
+	signal clock: std_ulogic:='0';
+	signal reset: std_ulogic:='0';
+	signal testing: boolean:= true;
+begin
+	clock <= not clock after clk_period/2 when testing else '0';
+	dut: MatrixMultiplierArchitecture
+		generic map(
+			matrixARowNumber => 2 ,
+			matrixAColNumber => 3 ,
+			matrixBRowNumber => 3 ,
+			matrixBColNumber => 4 
+		)
+		port map(
+			matrixA => matrixA_ext,
+			matrixB =>matrixB_ext,
+			matrixP=>matrixP_ext,
+			clock => clock,
+			reset=> reset
+		);
+	stimulus : process 
+		begin
+			reset <= '1' after T_RESET; -- Deasserting the reset after T_RESET nanosecods (the reset is active low).
+			wait for 50 ns;
+			matrixA_ext <= (("0001","0010","0011"),("0100","0101","0110"));
+			matrixB_ext <= (("0111","1111","1110","1101"),("1100","1011","1010","1001"),("1000","0001","0010","0011"));
+			wait until rising_edge(clock);
+			wait for 200 ns;
+			testing <= false;
+	end process stimulus;	
+end beh;

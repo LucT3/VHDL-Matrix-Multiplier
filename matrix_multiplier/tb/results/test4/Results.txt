@@ -1,0 +1,14 @@
+**MATRIX MULTIPLICATION RESULTS**
+
+MATRIX A ( 2 x 3 ):
+ [[1 2 3]
+ [4 5 6]]
+
+MATRIX B ( 3 x 4 ):
+ [[ 7 -1 -2 -3]
+ [-4 -5 -6 -7]
+ [-8  1  2  3]]
+
+MATRIX P = AB (MATRIX MULTIPLICATION RESULT): 
+ [[-25  -8  -8  -8]
+ [-40 -23 -26 -29]]

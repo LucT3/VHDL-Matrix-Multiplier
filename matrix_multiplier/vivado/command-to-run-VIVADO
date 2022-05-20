@@ -1,0 +1,8 @@
+*TO LET THE CODE WORK
+Command to run before starting synthesis/implementation to avoid compiler errors due to the use of VHDL 2008
+
+	set_property FILE_TYPE {VHDL 2008} [get_files *.vhd]
+	
+	
+*TO RUN THE IMPLEMENTATION
+	ADD setting->synthesis->options->more options-> write: -mode out_of_context

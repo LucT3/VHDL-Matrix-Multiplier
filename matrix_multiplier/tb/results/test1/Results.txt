@@ -1,0 +1,14 @@
+**MATRIX MULTIPLICATION RESULTS**
+
+MATRIX A ( 2 x 3 ):
+ [[-8 -8 -8]
+ [ 0  0  0]]
+
+MATRIX B ( 3 x 4 ):
+ [[-8  0  0  0]
+ [-8  0  0  0]
+ [-8  0  0  0]]
+
+MATRIX P = AB (MATRIX MULTIPLICATION RESULT): 
+ [[192   0   0   0]
+ [  0   0   0   0]]
