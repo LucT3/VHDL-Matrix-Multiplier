@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:38:27 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Sat May 21 08:13:42 2022
+# Process ID: 22944
+# Current directory: C:/Users/Asus/Desktop/FINAL_MATRIX/FINAL_MATRIX.runs/impl_1
+# Command line: vivado.exe -log MatrixMultiplierArchitecture.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source MatrixMultiplierArchitecture.tcl -notrace
+# Log file: C:/Users/Asus/Desktop/FINAL_MATRIX/FINAL_MATRIX.runs/impl_1/MatrixMultiplierArchitecture.vdi
+# Journal file: C:/Users/Asus/Desktop/FINAL_MATRIX/FINAL_MATRIX.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source MatrixMultiplierArchitecture.tcl -notrace
