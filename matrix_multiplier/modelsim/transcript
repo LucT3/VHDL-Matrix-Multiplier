@@ -1,0 +1,53 @@
+# Compile of Common.vhd was successful.
+# Compile of MatrixMultiplier.vhd was successful.
+# Compile of MatrixMultiplierArchitecture.vhd was successful.
+# Compile of MatrixRegister.vhd was successful.
+# Compile of MatrixMultiplier_tb.vhd was successful.
+# 5 compiles, 0 failed with no errors.
+vsim -gui work.matrixmultiplier_tb
+# vsim -gui work.matrixmultiplier_tb 
+# Start time: 19:18:50 on May 26,2022
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading ieee.numeric_std(body)
+# Loading ieee.math_real(body)
+# Loading work.common(body)
+# Loading work.matrixmultiplier_tb(beh)
+# Loading work.matrixmultiplierarchitecture(rtl)
+# Loading work.matrixregister(beh)
+# Loading work.matrixmultiplier(beh)
+add wave -position insertpoint sim:/matrixmultiplier_tb/dut/*
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+run
+# End time: 19:19:26 on May 26,2022, Elapsed time: 0:00:36
+# Errors: 0, Warnings: 7
