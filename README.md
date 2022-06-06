@@ -1,4 +1,4 @@
-# Electronics-Systems-Project
+# Electronics Systems Project - Matrix Multiplier in VHDL
 
 
 ### Specifications
