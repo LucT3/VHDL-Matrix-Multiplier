@@ -10,6 +10,6 @@
 ### Project Contents
 
 - **Modelsim Project of a Matrix Multiplier in VHDL**
-- **Vivado Porject of Matrix Multiplication Synthesis and Implementation**
-- **Python Program that automatically generates Testbenche files**
+- **Vivado Project of Matrix Multiplier Synthesis and Implementation**
+- **Automatic generator of Testbenche files (Python program)**
 - **Report**
