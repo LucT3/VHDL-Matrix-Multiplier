@@ -11,5 +11,5 @@
 
 - **Modelsim Project of a Matrix Multiplier in VHDL**
 - **Vivado Project of Matrix Multiplier Synthesis and Implementation**
-- **Automatic generator of Testbenche files (Python program)**
+- **Automatic generator of Testbench files (Python program)**
 - **Report**
