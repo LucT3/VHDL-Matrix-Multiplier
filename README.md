@@ -14,9 +14,9 @@ The **VHDL code** was written and tested with ***ModelSim***. Test plans were cr
 
 ## Programming Languages and Tools
 <div align="center">
- <img src="	https://img.shields.io/badge/%3C/%3E%20VHDL-%23A6A9AA.svg?style=for-the-badge&logo=mysl&logoColor=white" />
+ <img src="https://img.shields.io/badge/%3C/%3E%20VHDL-%23A6A9AA.svg?style=for-the-badge&logo=mysl&logoColor=white" />
  <img src="https://img.shields.io/badge/MODELSIM-3D72D7?style=for-the-badge&logo=gmail&logoColor=white" />
- <img src="	https://img.shields.io/badge/VIVADO-00C300?style=for-the-badge" />
+ <img src="https://img.shields.io/badge/VIVADO-00C300?style=for-the-badge" />
  <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
 </div>
 </br>
