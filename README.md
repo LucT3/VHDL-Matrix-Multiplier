@@ -1,4 +1,4 @@
-# Electronics Systems Project - Matrix Multiplier in VHDL
+# Electronics Systems Project - VHDL Matrix Multiplier
 Electronics Systems course project (MSc in Computer Engineering @ University of Pisa).
 The goal of the project is to produce the Design, Simulation and Synthesis of a Matrix Multiplier.\
 </br>
