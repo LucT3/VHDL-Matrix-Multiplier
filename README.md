@@ -30,7 +30,7 @@ For the test-bench simulation, please consider the following values of the param
 N=2, M=3 and P=4.
 <div align="center">
 </br>
-	<img src="https://github.com/LucT3/VHDL-Matrix-Multiplier/blob/main/documents/images/architecture/specification_model.png"/>
+	<img src="documents/images/architecture/specification_model.png"/>
 </div> 
 </br></br>
 
